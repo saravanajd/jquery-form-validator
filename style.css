@@ -1,0 +1,192 @@
+:root {
+    --color-primary: #26275e;
+    --color-secondary: #f15a22;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #2c3e51;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a,
+a:focus,
+a:hover {
+    text-decoration: none;
+    color: #9ec63a;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 5rem;
+}
+
+.card {
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #fefefe;
+    width: 340px;
+    padding: 16px 32px;
+    border: 2px solid rgba(38, 39, 94, 0.9);
+    transition: all 0.3s ease;
+}
+
+.card:focus,
+.card:hover {
+    box-shadow: 1px 1px 4px 3px rgba(75, 76, 71, 0.15);
+}
+
+.card-head {
+    padding: 10px 0 20px 0px;
+}
+
+.header {
+    font-size: 20px;
+    font-weight: 500;
+    color: #282828;
+    display: inline-block;
+    margin: 0;
+}
+
+
+.card-body {
+    display: block;
+    position: relative;
+}
+
+.card-footer {
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    text-align: right;
+    padding-top: 0.8rem;
+}
+
+.card-footer>span {
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.card-footer>span>a:hover {
+    transition: all 0.5s ease;
+    text-decoration: underline;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.form-group {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.form-label {
+    font-weight: 400;
+    display: block;
+    font-size: 16px;
+    color: #282828;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    font-size: 14px;
+    color: #282828;
+    border-radius: 3px;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    -webkit-box-shadow: none;
+    border: 1px solid #bbb;
+    padding: 8px;
+    display: block;
+    width: 100%;
+    line-height: 1.42857143;
+    background-color: #fff;
+    background-image: none;
+}
+
+.form-control:focus,
+.form-control:hover {
+    outline: 0 none;
+    -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.075);
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.075);
+    border-color: var(--color-primary);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #fff;
+    background-color: rgba(38, 39, 94, 0.9);
+    height: 40px;
+    width: 100%;
+    box-shadow: 2px 2px 3px 0px rgba(101, 101, 101, 0.4);
+}
+
+
+.btn:hover,
+.btn:focus {
+    background-color: #26275e !important;
+}
+
+.form-group .btn {
+    margin-top: 2rem;
+}
+
+.btn-sm {
+    margin-top: 0 !important;
+    width: auto;
+}
+
+.row {
+    display: flex;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+}
+
+.row .col-6:first-child .form-group {
+    margin-right: 4px;
+}
