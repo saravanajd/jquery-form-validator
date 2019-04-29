@@ -10,8 +10,11 @@
     <script src="jquery.min.js"></script>
     <script src="jquery.validator.js"></script>
     <script>
-        $(document).ready(function(){
-            $('form').validate();
+        $(document).ready(function () {
+            $('#btnSignIn').on('click', function (e) {
+               var isFormValid =  $('form').validate();
+               alert(isFormValid)
+            });
         })
     </script>
 </head>
@@ -20,9 +23,9 @@
     <div class="container">
         <div class="main">
             <div class="card">
-                    <div class="card-head">
-                            <h3 class="header">Sign In</h3>
-                        </div>
+                <div class="card-head">
+                    <h3 class="header">Sign In</h3>
+                </div>
                 <div class="card-body">
                     <form>
                         <div class="row">
@@ -35,7 +38,7 @@
                             <div class="col-6">
                                 <div class="form-group">
                                     <label for="firstname" class="form-label">Last Name</label>
-                                    <input type="text" data-validate="required" name="lastname" class="form-control">
+                                    <input type="text" data-validate="required" data-message="please enter firstname" name="lastname" class="form-control">
                                 </div>
                             </div>
                         </div>
@@ -45,14 +48,16 @@
                         </div>
                         <div class="form-group">
                             <label for="Password" class="form-label">Password</label>
-                            <input type="text"  data-validate="required,min,max" data-min="5" data-max="20" id="txtPassword"  name="password" class="form-control">
+                            <input type="text" data-validate="required,min,max" data-min="5" data-max="20" id="txtPassword"
+                                name="password" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="confirmpassword" class="form-label">Confirm Password</label>
-                            <input type="text" data-validate="required,match" data-compare="#txtPassword" name="confirmpassword" class="form-control">
+                            <input type="text" data-validate="required,match" data-compare="#txtPassword" name="confirmpassword"
+                                class="form-control">
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn" id="btnSignIn">Sign In</button>
+                            <button type="button" class="btn" id="btnSignIn">Sign In</button>
                         </div>
                     </form>
                 </div>
@@ -60,5 +65,4 @@
         </div>
     </div>
 </body>
-
 </html>
